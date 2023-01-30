@@ -7,3 +7,15 @@
 # 385916 -> yes
 # 123456 -> no
 
+n = int(input("Input any six digit number: "))
+print(n)
+left_half_sum = n // 100000 + n // 10000 % 10 + n // 1000 % 10
+a = left_half_sum
+print(a)
+right_half_sum = n // 100 % 10 + n // 10 % 10 + n % 10
+b = right_half_sum
+print (b)
+if a == b:
+    print("You've got a happy ticket!")
+else: 
+    print("Better luck next time :-(")
